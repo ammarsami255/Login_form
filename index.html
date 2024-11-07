@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <p class="login_par"><strong>Login Form</strong></p>
+            <div class="inputs">
+                <label for="em_ph">Email or Phone</label>
+                <input type="email" name="em_ph" placeholder="Enter your email or phone" required>
+                <label for="pass">Password</label>
+                <input type="password" name="pass" placeholder="Enter your password" required>
+                <a href="#" class="f_pass">Forgot Password?</a>
+                <button class="btn_login" onclick="goto()">Log In</button>
+                <div class="mem"><p>Not a member?</p><a href="#">Sign up now</a></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function goto(){
+            window.location.href="https://www.facebook.com/";
+        }
+    </script>
+</body>
+</html>
