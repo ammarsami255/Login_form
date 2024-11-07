@@ -10,11 +10,11 @@ body {
     align-items: center;
     color: #333;
 }
+
 strong{
-    animation: rotate-animation 2s linear ;    
+    animation: rotate-animation 2s linear;    
     display: inline-block; 
 }
-
 
 @keyframes rotate-animation {
     0% {
@@ -23,19 +23,20 @@ strong{
     50% {
         transform: scale(1.2);
     }
-    75%{
+    75% {
         transform: scale(1.4);
     }
-    85%{
+    85% {
         transform: scale(1.2);
     }
-    95%{
+    95% {
         transform: scale(1.1);
     }
-    100%{
+    100% {
         transform: scale(1);
     }
 }
+
 .main {
     background-color: white;
     padding: 30px 40px;
@@ -126,4 +127,55 @@ input:focus {
 
 .mem a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main {
+        padding: 20px;
+        max-width: 280px;
+        transform: scale(1);
+    }
+    .login_par {
+        font-size: 1.2em;
+    }
+    .inputs {
+        gap: 8px;
+    }
+    input[type="email"],
+    input[type="password"] {
+        font-size: 12px;
+    }
+    .btn_login {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+    .mem {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 15px;
+        max-width: 90%;
+        transform: scale(1);
+    }
+    .login_par {
+        font-size: 1.1em;
+    }
+    .inputs {
+        gap: 6px;
+    }
+    input[type="email"],
+    input[type="password"] {
+        font-size: 11px;
+    }
+    .btn_login {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+    .mem {
+        font-size: 10px;
+    }
 }
