@@ -10,7 +10,32 @@ body {
     align-items: center;
     color: #333;
 }
+strong{
+    animation: rotate-animation 2s linear ;    
+    display: inline-block; 
+}
 
+
+@keyframes rotate-animation {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    75%{
+        transform: scale(1.4);
+    }
+    85%{
+        transform: scale(1.2);
+    }
+    95%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 .main {
     background-color: white;
     padding: 30px 40px;
